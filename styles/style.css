@@ -1,0 +1,182 @@
+*,*:before,*:after{
+padding:0;
+margin:0;
+box-sizing:border-box; 
+}
+input,textarea{
+outline:none
+}   
+button,input[type="submit"]{
+outline:none;
+border:none;
+box-shadow: none!important;
+}
+button:hover,input[type="submit"]{
+cursor:pointer;
+transform: translateY(-0.25em);
+}
+li,a{
+text-decoration:none!important;
+list-style: none;
+}
+#header-section{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+}
+.topbar{
+    background: transparent!important;
+}
+.topbar-right li{
+    display:inline-block;
+}
+.navigation{
+    background:#00123382 ;
+}
+.sliding-navigation{
+    background:#001233 ;
+    position: fixed;
+    top:0;
+    display: block;
+    transition: background 0.5s;
+    margin: auto;
+    margin-bottom: 2rem;
+    width: 100%!important;
+    
+    
+}
+.nav-link{
+    color: #fff!important;
+    font-weight: bold!important;
+}
+.jarallax{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vw;
+    max-height: 40rem;
+    min-height: 20rem;
+    overflow: hidden;
+    background-image: url(/images/pawel-czerwinski-fPN1w7bIuNU-unsplash.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom: 120px;
+    
+   
+}
+
+
+.banner-content h1{
+    font-size: 60px;
+}
+.default-btn {
+    z-index: 1;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    padding: 15px 30px 16px;
+    line-height: 1;
+    -webkit-transition: all ease .5s;
+    transition: all ease .5s;
+    text-align: center;
+    background-color:#C53678;
+    position: relative;
+    overflow: hidden;
+}
+/* .default-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: -webkit-gradient(linear, right top, left top, from(#ffffff), to(transparent));
+    background: linear-gradient(right, #ffffff, transparent);
+    -webkit-animation: right 2s linear infinite;
+    animation: right 2s linear infinite;
+}
+@keyframes right{
+from{right:10px ;}
+to{left: 0;}
+}
+.default-btn::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(transparent));
+    background: linear-gradient(left, #ffffff, transparent);
+    -webkit-animation: left s linear infinite;
+    animation: left 0.5s linear infinite;
+}
+@keyframes left{
+    0%{left:10px}
+    100%{left: 0;}
+    }
+.default-btn span::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(transparent));
+    background: linear-gradient(top, #ffffff, transparent);
+    -webkit-animation: top 0.5s linear infinite;
+    animation: top 0.5s linear infinite;
+    -webkit-animation-delay: 0.25s;
+    animation-delay: 0.25s;
+}
+@keyframes top {
+   0%{top:10px}
+   100%{top:0px}
+
+}
+.default-btn span::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(transparent));
+    background: linear-gradient(bottom, #ffffff, transparent);
+    -webkit-animation: bottom 0.5s linear infinite;
+    animation: bottom 0.5s linear infinite;
+    -webkit-animation-delay: 0.25s;
+    animation-delay: 0.25s;
+}
+@keyframes bottom {
+    0%{bottom:10px}
+    100%{bottom: 0px}
+
+} */
+.phone-btn{
+    display: none;
+}
+@media screen and (max-width: 500px) {
+.navbar-brand{
+    flex: 0 0 auto;
+    width: 33.3333%;
+}
+.phone-btn{
+    display: block!important;
+}  
+.button{
+    display: none;
+}  
+}
+@media screen and (max-width:768px) {
+    .navbar-collapse{
+        background: #001233;
+    }
+    
+}
