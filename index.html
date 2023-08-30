@@ -14,6 +14,11 @@
       href="https://fonts.googleapis.com/css?family=Quicksand:300,500"
       rel="stylesheet"
     />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <body>
     <header id="header-section">
@@ -189,6 +194,14 @@
                         <p class="text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia maxime fugiat molestias earum voluptatibus assumenda, architecto odit modi. Fugit, consectetur?</p>
                     </div>
                 </div>
+                <div class="col-lg-3 position-relative">
+                    <div class="banner-video wow zoomIn" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: zoomIn;">
+                        <a href="https://www.youtube.com/watch?v=sdpxddDzXfE" class="video-btn popup-youtube">
+                            <i class="bx bx-play"></i>
+                        </a>
+                    </div>
+                    
+                </div>
             </div>
           </div>
      </div>
@@ -198,39 +211,525 @@
         <div class="container mx-auto">
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="card mx-auto" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <div class="card mx-auto " style="height:200px;">
+                        <div class="card-body ">
+                            <div class="title-card d-flex align-items-center mx-auto">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#c53678" class="bi bi-sliders" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3h9.05zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8h2.05zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1h9.05z"/>
+                                  </svg>
+                              <h3 class="card-title ps-3 fw-bolder">Card title</h3>
+                            </div>   
+                            <div class="body-card pt-2">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div> 
+                         
                         </div>
-                      </div>
+                    </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="card mx-auto" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <div class="card mx-auto " style="height:200px;">
+                        <div class="card-body ">
+                            <div class="title-card d-flex align-items-center mx-auto">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#c53678" class="bi bi-sliders" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3h9.05zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8h2.05zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1h9.05z"/>
+                                  </svg>
+                              <h3 class="card-title ps-3 fw-bolder">Card title</h3>
+                            </div>   
+                            <div class="body-card pt-2">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div> 
+                         
                         </div>
-                      </div>
+                    </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="card mx-auto" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <div class="card mx-auto " style="height:200px;">
+                        <div class="card-body ">
+                            <div class="title-card d-flex align-items-center mx-auto">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#c53678" class="bi bi-sliders" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3h9.05zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8h2.05zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1h9.05z"/>
+                                  </svg>
+                              <h3 class="card-title ps-3 fw-bolder">Card title</h3>
+                            </div>   
+                            <div class="body-card pt-2">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div> 
+                         
                         </div>
-                      </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section class="approach pb-70">
+        <div class="container mt-3">
+            <div class="approach-title fw-bolder">
+                <span class="text-pink fs-2">Our Approach</span>
+                <h2 class="fw-bold">Through system forensics and tracking, we make the world better.</h2>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="approach-img">
+                        <img src="/images/shubham-dhage-_rZnChsIFuQ-unsplash.jpg" alt="Image" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6 ">
+                    <div class="approach-content ms-4 ">
+                        <h3 class="mb-4 fw-bold">Without stopping for a moment we give you best technology experience with our
+                            expertise to stopping theft and preventing damages.</h3>
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="single-approach single-approach-hoverw p-3 mb-3 bg-purple text-white border-left-pink">
+                                    <h3>Investigation</h3>
+                                    <p>Understanding the situation and discussion with clients for details regarding the
+                                        situation.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="single-approach single-approach-hover p-3 mb-3 border-left-pink">
+                                    <h3>Findings / Reports</h3>
+                                    <p>Detailed reports on investigation findings and instructions to <br> follow.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="single-approach single-approach-hoverw p-3 mb-3 border-left-pink text-white bg-purple">
+                                    <h3>Solution</h3>
+                                    <p>Clients are given process and approach, with permission to proceed..</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="single-approach single-approach-hover p-3 mb-3 border-left-pink">
+                                    <h3>Recovery / Results</h3>
+                                    <p>We carry out our operations and get what has been stolen or hidden from you to
+                                        light.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <section class="privacy jarallax">
+        <div class="container text-white">
+            <div class="privacy-title white-title position-relative text-center">
+                <span class="mb-3 fw-bold">Our Privacy Policy</span>
+                <h2>You Can Protect Your Organization’s Cybersecurity By Us</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 position-relative text-dark">
+                    <div class="single-challenges overly-one bg-white">
+                        <div class="overly-two">
+                            <i class="flaticon-threat"></i>
+                            <h3>Identifying Threats</h3>
+                            <p>We identity cyber threats and mallicious attempts</p>
+                            <span class="flaticon-threat"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-challenges overly-one">
+                        <div class="overly-two">
+                            <i class="flaticon-cyber"></i>
+                            <h3>Cyber Risk Assessment</h3>
+                            <p>A team of cyber risks managements professionals.</p>
+                            <span class="flaticon-cyber"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-challenges overly-one">
+                        <div class="overly-two">
+                            <i class="flaticon-cyber-security-1"></i>
+                            <h3>Testing Cyber Security</h3>
+                            <p>We prevent future attacks from exposing your data.</p>
+                            <span class="flaticon-cyber-security-1"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-challenges overly-one">
+                        <div class="overly-two">
+                            <i class="flaticon-password"></i>
+                            <h3>Managing Cloud Security</h3>
+                            <p>Your information are privacy protected by CTS</p>
+                            <span class="flaticon-password"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="container">
+            <div class="section-title">
+                <span>Cybersecurity Services</span>
+                <h2>You Can Protect Your Organization’s Cybersecurity By Services Us</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-services">
+                        <div class="services-img">
+                            <a href="https://cybertracksystems.com/services/phone-remote-access">
+                                <img src="assets/img/services/services-1.jpg" alt="Image">
+                            </a>
+                        </div>
+                        <div class="services-content">
+                            <h3><a href="https://cybertracksystems.com/services/phone-remote-access">Phone remote access</a></h3>
+                            <div class="content">
+                                <p>Creating a backdoor into phones in order to access and monitor activities</p>
+                                <a href="https://cybertracksystems.com/services/phone-remote-access" class="read-more">
+                                    Read More
+                                    <i class="flaticon-right-arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-services">
+                        <div class="services-img">
+                            <a href="https://cybertracksystems.com/services/social-media-access">
+                                <img src="assets/img/services/services-2.jpg" alt="Image">
+                            </a>
+                        </div>
+                        <div class="services-content">
+                            <h3><a href="https://cybertracksystems.com/services/social-media-access">Social media access.</a></h3>
+                            <p>Gain access, recover or retrieve social media or email accounts from hackers.</p>
+                            <a href="https://cybertracksystems.com/services/social-media-access" class="read-more">
+                                Read More
+                                <i class="flaticon-right-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-services">
+                        <div class="services-img">
+                            <a href="https://cybertracksystems.com">
+                                <img src="assets/img/services/services-3.jpg" alt="Image">
+                            </a>
+                        </div>
+                        <div class="services-content">
+                            <h3><a href="https://cybertracksystems.com">Debt clearance </a></h3>
+                            <p>Clear your debt from your local bank account without trace or paper trail.</p>
+                            <a href="https://cybertracksystems.com" class="read-more">
+                                Read More
+                                <i class="flaticon-right-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-services">
+                        <div class="services-img">
+                            <a href="https://cybertracksystems.com">
+                                <img src="assets/img/services/services-4.jpg" alt="Image">
+                            </a>
+                        </div>
+                        <div class="services-content">
+                            <h3><a href="https://cybertracksystems.com">Credit score upgrade</a></h3>
+                            <p>Upgrade your credit score to access and enjoy the full benefits of your bank.</p>
+                            <a href="https://cybertracksystems.com" class="read-more">
+                                Read More
+                                <i class="flaticon-right-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials jarallax">
+        <div id="carouselExampleAutoplaying" class="carousel slide position-relative" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="..." class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+ <section class="partners">
+    <div class="swiper">
+        <!-- Parallax background element -->
+        <div
+          class="parallax-bg"
+          style="background-image:url(path/to/image.jpg)"
+          data-swiper-parallax="-23%"
+        ></div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <!-- Each slide has parallax title -->
+            <div class="title" data-swiper-parallax="-100">Slide 1</div>
+            <!-- Parallax subtitle -->
+            <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+            <!-- And parallax text with custom transition duration -->
+            <div
+              class="text"
+              data-swiper-parallax="-300"
+              data-swiper-parallax-duration="600"
+            >
+              <p>Lorem ipsum dolor sit amet, ...</p>
+            </div>
+            <!-- Opacity parallax -->
+            <div data-swiper-parallax-opacity="0.5">I will change opacity</div>
+            <!-- Scale parallax -->
+            <div data-swiper-parallax-scale="0.15">I will change scale</div>
+          </div>
+          <div class="swiper-slide">
+            <!-- Each slide has parallax title -->
+            <div class="title" data-swiper-parallax="-100">Slide 1</div>
+            <!-- Parallax subtitle -->
+            <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+            <!-- And parallax text with custom transition duration -->
+            <div
+              class="text"
+              data-swiper-parallax="-300"
+              data-swiper-parallax-duration="600"
+            >
+              <p>Lorem ipsum dolor sit amet, ...</p>
+            </div>
+            <!-- Opacity parallax -->
+            <div data-swiper-parallax-opacity="0.5">I will change opacity</div>
+            <!-- Scale parallax -->
+            <div data-swiper-parallax-scale="0.15">I will change scale</div>
+          </div>
+          <div class="swiper-slide">
+            <!-- Each slide has parallax title -->
+            <div class="title" data-swiper-parallax="-100">Slide 1</div>
+            <!-- Parallax subtitle -->
+            <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+            <!-- And parallax text with custom transition duration -->
+            <div
+              class="text"
+              data-swiper-parallax="-300"
+              data-swiper-parallax-duration="600"
+            >
+              <p>Lorem ipsum dolor sit amet, ...</p>
+            </div>
+            <!-- Opacity parallax -->
+            <div data-swiper-parallax-opacity="0.5">I will change opacity</div>
+            <!-- Scale parallax -->
+            <div data-swiper-parallax-scale="0.15">I will change scale</div>
+          </div>
+          <div class="swiper-slide">
+            <!-- Each slide has parallax title -->
+            <div class="title" data-swiper-parallax="-100">Slide 1</div>
+            <!-- Parallax subtitle -->
+            <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+            <!-- And parallax text with custom transition duration -->
+            <div
+              class="text"
+              data-swiper-parallax="-300"
+              data-swiper-parallax-duration="600"
+            >
+              <p>Lorem ipsum dolor sit amet, ...</p>
+            </div>
+            <!-- Opacity parallax -->
+            <div data-swiper-parallax-opacity="0.5">I will change opacity</div>
+            <!-- Scale parallax -->
+            <div data-swiper-parallax-scale="0.15">I will change scale</div>
+          </div>
+          ...
+        </div>
+        <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+      </div>
+ </section>
+ <section class="get-in-touch jarallax">
+    <div class="container">
+        <div class="section-title white-title">
+            <span>Get In Touch</span>
+            <h2>Contact Us Today To Speak With An Expert About Your Specific Needs</h2>
+        </div>
+        <form class="get-in-touch-form" method="POST" action="https://cybertracksystems.com/consultation">
+            <input type="hidden" name="_token" value="mPhyLYxNczIQ2oRYybqN04CtQNzEoHq9XhlhBFsx">            <div class="row">
+                <div class="col-lg-6 col-sm-6">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" class="form-control" name="name" id="name">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" class="form-control" name="email" id="email">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                    <div class="form-group">
+                        <label>Subject</label>
+                        <input type="text" class="form-control" name="msg_subject" id="msg_subject">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea class="form-control" name="message" id="message"></textarea>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="default-btn">
+                <span>Consultation</span>
+            </button>
+        </form>
+    </div>
+ </section>
+ <section class="subscribe">
+    <div class="container">
+        <div class="subscribe-bg">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-sm-6">
+                    <div class="subscribe-content">
+                        <img src="assets/img/subscribe-img.png" alt="Image">
+                        <h3>Hire an Ethical hacker</h3>
+                        <span>Just one step away from achieving your goal</span>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                    <form class="newsletter-form" action="https://cybertracksystems.com/contact" method="GET" novalidate="true">
+
+                        <button class="default-btn" type="submit" style="pointer-events: all; cursor: pointer;">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+ </section>
+ <footer class="jarallax footer-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="single-footer-widget">
+                    <a href="https://cybertracksystems.com" class="logo">
+                        <img src="https://cybertracksystems.com/logo.png" alt="Image" style="width: 200px !important">
+                    </a>
+
+                    <ul class="social-icon">
+                        <li>
+                            <a href="#">
+                                <i class="bx bxl-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="bx bxl-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="bx bxl-linkedin-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="bx bxl-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="single-footer-widget">
+                    <h3>Contact</h3>
+                    <ul class="address">
+
+                        <li>
+                            <i class="bx bxs-envelope"></i>
+                            <a href="mailto:info@cybertracksystems.com"><span>info@cybertracksystems.com</span></a>
+                            
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="single-footer-widget">
+                    <h3>Quick Links</h3>
+                    <ul class="import-link">
+                        <li>
+                            <a href="https://cybertracksystems.com/testimonial">Testimonials</a>
+                        </li>
+                        <li>
+                            <a href="https://cybertracksystems.com/contact">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="https://cybertracksystems.com">About CyberTrackSystems</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="single-footer-widget">
+                    <h3>Services</h3>
+                    <ul class="import-link">
+                        <li>
+                            <a href="https://cybertracksystems.com/services/phone-remote-access">Phone Remote Access</a>
+                        </li>
+                        <li>
+                            <a href="https://cybertracksystems.com/services/social-media-access">Social Media Access</a>
+                        </li>
+                        <li>
+                            <a href="https://cybertracksystems.com/services/debt-clearance">Debt Clearance</a>
+                        </li>
+                        <li>
+                            <a href="https://cybertracksystems.com/services/credit-score-upgrade">Credit Score Upgrade</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+ </footer>
+ <div class="copyright">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6">
+                <p>
+                    Copyright <i class="bx bx-copyright"></i>2021 CyberTrackSystems.
+                </p>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <ul class="footer-menu">
     
+                    <li>
+                        <a href="https://cybertracksystems.com/contact" target="_blank">
+                            Hire Us Now
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+ </div>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.js"></script>

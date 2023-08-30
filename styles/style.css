@@ -19,6 +19,15 @@ li,a{
 text-decoration:none!important;
 list-style: none;
 }
+.text-pink{
+   color:#C53678;
+}
+.bg-purple{
+    background:#001233 ;
+}
+.border-left-pink{
+    border-left: 1px solid #C53678;
+}
 #header-section{
     position: absolute;
     top: 0;
@@ -52,7 +61,7 @@ list-style: none;
     color: #fff!important;
     font-weight: bold!important;
 }
-.jarallax{
+#banner-area{
     position: relative;
     top: 0px;
     left: 0px;
@@ -89,7 +98,59 @@ list-style: none;
     position: relative;
     overflow: hidden;
 }
-/* .default-btn::before {
+.video-btn {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    border-radius: 0;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: rgba(255, 42, 96, .9);
+    border-radius: 50%;
+    -webkit-transition: all ease .5s;
+    transition: all ease .5s;
+}
+.video-btn::after, .video-btn::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    border-radius: 0;
+    border-radius: 50%;
+    -webkit-transition: all ease .5s;
+    transition: all ease .5s;
+    -webkit-animation: ripple 1.6s ease-out infinite;
+    animation: ripple 1.6s ease-out infinite;
+    background-color: rgba(255, 42, 96, .9);
+}
+.bx-play{
+    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+@keyframes ripple{
+    /* 0%{
+        width: 70px;
+        height: 70px;
+    }
+    100%{
+        width:500px;
+        height: 500px;
+    } */
+}
+.default-btn::before {
     content: "";
     position: absolute;
     top: 0;
@@ -158,15 +219,169 @@ to{left: 0;}
     0%{bottom:10px}
     100%{bottom: 0px}
 
-} */
+}
 .phone-btn{
     display: none;
 }
+.card{
+    background: #001233 !important;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    color: #fff!important;
+}
+.cards{
+    padding-bottom: 100px;
+    margin-top: -120px;
+}
+.approach-title{
+    max-width: 750px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.approach-title h2{
+ font-size: 40px;
+}
+.single-approach{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    transition: all ease in .5s;
+}
+.single-approach-hover:hover{
+    background-color: #001233;
+    color:#fff;
+}
+.single-approach-hoverw:hover{
+    background-color: #fff;
+    color:#001233!important;
+}
+
+.pb-70{
+    padding-bottom:70px;
+}
+.privacy{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vw;
+    max-height: 40rem;
+    min-height: 20rem;
+    overflow: hidden;
+    background-image: url(../images/adi-goldstein-EUsVwEOsblE-unsplash.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top:100px ;
+    padding-bottom: 70px;
+}
+.privacy::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000219;
+        opacity: .75;
+
+    }
+.privacy-title{
+    max-width: 750px;
+    margin: -5px auto 50px;
+}
+.privacy-title h2{
+    font-size: 40px;
+}
+.testimonials{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vw;
+    max-height: 40rem;
+    min-height: 20rem;
+    overflow: hidden;
+    background-image: url(../images/shubham-dhage-JlijbOtSWuw-unsplash.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top:100px ;
+    padding-bottom: 70px;
+}
+.get-in-touch{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vw;
+    max-height: 40rem;
+    min-height: 20rem;
+    overflow: hidden;
+    background-image: url(../images/shubham-dhage-T9rKvI3N0NM-unsplash.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top:100px ;
+    padding-bottom: 70px;
+}
+footer{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vw;
+    max-height: 40rem;
+    min-height: 20rem;
+    overflow: hidden;
+    background-image: url(../images/nenad-novakovic-L2QB-rG5NM0-unsplash.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top:100px ;
+    padding-bottom: 70px;
+}
+.testimonials::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000219;
+    opacity: .75;
+    z-index: -1;
+}
+.get-in-touch::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000219;
+    opacity: .75;
+    z-index: -1;
+}
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000219;
+    opacity: .75;
+    z-index: -1;
+}
+.swiper {
+    width: 900px;
+    height: 300px;
+  }
 @media screen and (max-width: 500px) {
 .navbar-brand{
     flex: 0 0 auto;
     width: 33.3333%;
 }
+
 .phone-btn{
     display: block!important;
 }  
@@ -177,6 +392,8 @@ to{left: 0;}
 @media screen and (max-width:768px) {
     .navbar-collapse{
         background: #001233;
+        border-top: 2px solid #C53678;
+        border-bottom: 2px solid #C53678;
     }
     
 }
