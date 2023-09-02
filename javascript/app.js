@@ -6,6 +6,8 @@ const slidingNavButton = document.querySelector('.sliding-nav-button');
 const navButton = document.querySelector('.nav-button');
 const nav = document.querySelector('.navigation');
 const topBar = document.querySelector('.topbar');
+const dropdown = document.querySelector('.dropdown')
+const dropdownToggle = document.querySelector(' .dropdown-toggle')
 let buttonClicked = false;
 console.log(slidingNav);
 window.onscroll= function(){

@@ -91,8 +91,23 @@ color:#fff!important
     
    
 }
-
-
+.dropdown-menu{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    border-top: 2px solid #C53678!important;
+    width: 250px;
+}
+.dropdown-item{
+    font-size: 15.5px;
+    color: #000219;
+    position: relative;
+    padding: 10px 15px;
+    border-bottom: 1px dashed #eee;
+    margin-left: 0;
+    margin-right: 0;
+    text-transform: capitalize;
+    display: block;
+    font-weight: 600;
+}
 .banner-content h1{
     font-size: 60px;
 }
@@ -110,6 +125,38 @@ color:#fff!important
     position: relative;
     overflow: hidden;
 }
+.default-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: -webkit-gradient(linear, right top, left top, from(#ffffff), to(transparent));
+    background: linear-gradient(right, #ffffff, transparent);
+    -webkit-animation: right 2s linear infinite;
+    animation: right 2s linear infinite;
+}
+@keyframes right{
+from{transform: translateX(-300px);}
+to{transform: translateX(0px);}
+}
+.default-btn::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(transparent));
+    background: linear-gradient(left, #ffffff, transparent);
+    -webkit-animation: left 2s linear infinite;
+    animation: left 2s linear infinite;
+}
+@keyframes left{
+    from{transform: translateX(300px);}
+    to{transform: translateX(0px);}
+    }
 .video-btn {
     display: inline-block;
     width: 70px;
@@ -131,11 +178,8 @@ color:#fff!important
     content: "";
     display: block;
     position: absolute;
-    top: 0;
-    right: 0;
+    transform: translate(50%, 50%);
     z-index: -1;
-    bottom: 0;
-    left: 0;
     border-radius: 0;
     border-radius: 50%;
     -webkit-transition: all ease .5s;
@@ -152,48 +196,17 @@ color:#fff!important
     transform: translate(-50%, -50%);
     color: #fff;
 }
-@keyframes ripple{
-    /* 0%{
-        width: 70px;
-        height: 70px;
+/* @keyframes ripple{
+    0%{
+        width: 0px;
+        height: 0px;
     }
     100%{
-        width:500px;
-        height: 500px;
-    } */
-}
-.default-btn::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: -webkit-gradient(linear, right top, left top, from(#ffffff), to(transparent));
-    background: linear-gradient(right, #ffffff, transparent);
-    -webkit-animation: right 2s linear infinite;
-    animation: right 2s linear infinite;
-}
-@keyframes right{
-from{right:10px ;}
-to{left: 0;}
-}
-.default-btn::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(transparent));
-    background: linear-gradient(left, #ffffff, transparent);
-    -webkit-animation: left s linear infinite;
-    animation: left 0.5s linear infinite;
-}
-@keyframes left{
-    0%{left:10px}
-    100%{left: 0;}
+        width:50px;
+        height: 50px;
     }
+} */
+
 .default-btn span::before {
     content: "";
     position: absolute;
@@ -203,14 +216,14 @@ to{left: 0;}
     height: 100%;
     background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(transparent));
     background: linear-gradient(top, #ffffff, transparent);
-    -webkit-animation: top 0.5s linear infinite;
-    animation: top 0.5s linear infinite;
-    -webkit-animation-delay: 0.25s;
-    animation-delay: 0.25s;
+    -webkit-animation: top 2s linear infinite;
+    animation: top 2s linear infinite;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
 }
 @keyframes top {
-   0%{top:10px}
-   100%{top:0px}
+    from{transform: translateY(150px);}
+    to{transform: translateY(0px);}
 
 }
 .default-btn span::after {
@@ -222,14 +235,14 @@ to{left: 0;}
     height: 100%;
     background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(transparent));
     background: linear-gradient(bottom, #ffffff, transparent);
-    -webkit-animation: bottom 0.5s linear infinite;
-    animation: bottom 0.5s linear infinite;
-    -webkit-animation-delay: 0.25s;
-    animation-delay: 0.25s;
+    -webkit-animation: bottom 2s linear infinite;
+    animation: bottom 2s linear infinite;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
 }
 @keyframes bottom {
-    0%{bottom:10px}
-    100%{bottom: 0px}
+    from{transform: translateY(-150px);}
+    to{transform: translateY(0px);}
 
 }
 .phone-btn{
@@ -243,6 +256,96 @@ to{left: 0;}
 .cards{
     padding-bottom: 100px;
     margin-top: -120px;
+}
+.bi-sliders{
+    transition: all ease.5s;
+    color:#C53678
+}
+.card{
+    transition: all ease .5s;
+    position: relative;
+}
+.card::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: -webkit-gradient(linear, left top, right top, from(#C53678), to(transparent));
+    background: linear-gradient(left, #C53678, transparent);
+    -webkit-transition: all ease .5s;
+    transition: all ease .5s;
+    opacity: 0;
+    z-index: 1;
+}
+.card::after {
+    content: "";
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, right top, from(#C53678), to(transparent));
+    background: linear-gradient(left, #C53678, transparent);
+    -webkit-transition: all ease .5s;
+    transition: all ease .5s;
+    opacity: 0;
+    z-index: 1;
+}
+.card-body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: -webkit-gradient(linear, left top, right top, from(transparent), to(#C53678));
+    background: linear-gradient(left, transparent, #C53678);
+    -webkit-transition: all ease .5s;
+    transition: all ease .5s;
+    opacity: 0;
+}
+.card-body::after{
+    content: "";
+    position: absolute;
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, right top, from(transparent), to(#C53678));
+    background: linear-gradient(left, transparent, #C53678);
+    -webkit-transition: all ease .5s;
+    transition: all ease .5s;
+    opacity: 0;
+}
+.card:hover .card-body::before{
+    left: 30px;
+    opacity: 1;
+}
+.card:hover .card-body::after{
+    top: 30px;
+    opacity: 1;
+
+}
+.card:hover::before {
+    right: 30px;
+    opacity: 1;
+}
+.card:hover::after {
+    bottom: 30px;
+    opacity: 1;
+
+}
+.card:hover{
+    transform: translateY(-5px);
+}
+.card:hover .bi-sliders{
+    color: #fff!important;
+    transform: rotateY(360deg);
+}
+.card:hover .title-card{
+    color:#C53678!important
 }
 .approach-title{
     max-width: 750px;
@@ -401,15 +504,15 @@ footer{
     left: 0px;
     width: 100%;
     height: 100vw;
-    max-height: 40rem;
-    min-height: 20rem;
+    max-height: 30rem;
+    min-height: 10rem;
     overflow: hidden;
     background-image: url(../images/nenad-novakovic-L2QB-rG5NM0-unsplash.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     padding-top:100px ;
-    padding-bottom: 70px;
+    padding-bottom: 40px;
 }
 .testimonials::before {
     content: "";
@@ -507,14 +610,17 @@ footer::before {
     position: absolute;
     top: 7px;
     left: 0;
-    width: 11px;
-    height: 11px;
+    width: 20px;
+    height: 20px;
     background-color: #C53678;
     -webkit-transition: all ease .5s;
     transition: all ease .5s;
 }
 .single-footer-widget .import-link li:hover::before {
     border-radius: 50%;
+}
+.copyright{
+    border-top: 1px solid #C53678;
 }
 
 /* .single-footer-widget .address li{
