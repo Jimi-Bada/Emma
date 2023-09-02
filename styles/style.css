@@ -19,6 +19,9 @@ li,a{
 text-decoration:none!important;
 list-style: none;
 }
+a{
+color:#fff!important
+}
 .text-pink{
    color:#C53678;
 }
@@ -27,6 +30,15 @@ list-style: none;
 }
 .border-left-pink{
     border-left: 1px solid #C53678;
+}
+.pt-100{
+    padding-top: 100px;
+}
+.pb-70{
+    padding-bottom: 70px;
+}
+.max-w{
+    max-width: 750px;
 }
 #header-section{
     position: absolute;
@@ -270,7 +282,7 @@ to{left: 0;}
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top:100px ;
+    padding-top:55px ;
     padding-bottom: 70px;
 }
 .privacy::before {
@@ -291,6 +303,50 @@ to{left: 0;}
 .privacy-title h2{
     font-size: 40px;
 }
+.single-challenges{
+    padding: 30px 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+}
+.services > .container > .section-title{
+    margin: -5px auto 50px;
+}
+.services-img a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left bottom, left top, from(#000219), to(transparent));
+    background: linear-gradient(bottom, #000219, transparent);
+}
+.services-content{
+    position: absolute;
+    bottom:-120px;
+    left: 0;
+    right: 0;
+    transition: all ease-in .3s;
+    padding: 30px;
+    color: #fff;
+}
+.single-services:hover .services-content {
+  bottom: 0;
+}
+.single-services{
+    transition: all ease-in .3s;
+    overflow:hidden;
+    margin-bottom:30px;
+    position:relative;
+    max-height:20rem
+}
+.read-more{
+    color:#C53678!important;
+    font-weight:600;
+}
+.single-services:hover{ 
+    transform: translateY(-5px);
+}
 .testimonials{
     position: relative;
     top: 0px;
@@ -307,6 +363,22 @@ to{left: 0;}
     padding-top:100px ;
     padding-bottom: 70px;
 }
+.carousel{
+    text-align: center;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.carousel-control-prev{
+    left:-150px!important;
+}
+.carousel-control-next{
+    right:-150px!important;
+}
+.carousel li{
+    display:inline-block;
+}
+
 .get-in-touch{
     position: relative;
     top: 0px;
@@ -361,6 +433,55 @@ footer{
     opacity: .75;
     z-index: -1;
 }
+.get-in-touch-form{
+    
+        text-align: center;
+        max-width: 810px;
+        margin: auto;
+
+}
+.form-control{
+    background-color: #fff;
+    border: none !important;
+    height: 50px;
+    padding-left: 15px;
+}
+.subscribe-bg{
+    background:#f0f0fa ;
+}
+.subscribe-content{
+    padding-left: 100px;
+}
+.social-icon li{
+    display: inline-block;
+    margin-right: 5px;
+}
+.social-icon li a{
+    display: inline-block;
+    -webkit-transition: all ease .5s;
+    transition: all ease .5s;
+    text-decoration: none;
+    color: #4b5280;
+}
+.social-icon li a:hover{
+    transform: translateY(-2px);
+}
+.social-icon li a:hover i{
+    background-color:#C53678;
+}
+
+.social-icon li a i{
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    -webkit-transition: all ease .5s;
+    transition: all ease .5s;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, .1);
+}
 footer::before {
     content: "";
     position: absolute;
@@ -371,6 +492,40 @@ footer::before {
     background-color: #000219;
     opacity: .75;
     z-index: -1;
+}
+.single-footer-widget h3::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+}
+.single-footer-widget .import-link li::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 11px;
+    height: 11px;
+    background-color: #C53678;
+    -webkit-transition: all ease .5s;
+    transition: all ease .5s;
+}
+.single-footer-widget .import-link li:hover::before {
+    border-radius: 50%;
+}
+
+/* .single-footer-widget .address li{
+    padding-left:
+} */
+.single-footer-widget .address li i {
+    position: absolute;
+    color: #C53678;
+    left: 0;
+    top: 5px;
+    font-size: 25px;
 }
 .swiper {
     width: 900px;

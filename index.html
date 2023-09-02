@@ -1,738 +1,891 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Quicksand:300,500"
-      rel="stylesheet"
-    />
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-/>
-<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  </head>
-  <body>
-    <header id="header-section">
-      <div class="topbar  py-3">
-        <div class="container">
-          <div class="row align-items-center text-center text-sm-start">
-            <div class="topbar-left col-sm-6">
-              <ul class="mb-0 ps-0">
-                <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="#fff"
-                    class="bi bi-envelope-at"
-                    viewBox="0 0 16 16"
-                  >
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <header id="header-section">
+    <div class="topbar  py-3">
+      <div class="container">
+        <div class="row align-items-center text-center text-sm-start">
+          <div class="topbar-left col-sm-6">
+            <ul class="mb-0 ps-0">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-envelope-at"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z" />
+                  <path
+                    d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z" />
+                </svg>
+                <a href="http://" class="fw-bolder text-white" target="_blank">lorem@email.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="topbar-right col-sm-6 text-center text-sm-end">
+            <ul class="mb-0 ps-0 mt-1 mt-sm-0">
+              <li class="ms-3">
+                <a href="http://" class="" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="#fff" class="bi bi-facebook" viewBox="0 0 16 16">
                     <path
-                      d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"
-                    />
+                      d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                  </svg></a>
+              </li>
+              <li class="ms-3">
+                <a href="http://" class="" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-instagram"
+                    viewBox="0 0 16 16">
                     <path
-                      d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"
-                    />
+                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
                   </svg>
-                  <a href="http://" class="fw-bolder text-white" target="_blank"
-                    >lorem@email.com</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="topbar-right col-sm-6 text-center text-sm-end">
-              <ul class="mb-0 ps-0 mt-1 mt-sm-0">
-                <li class="ms-3">
-                  <a href="http://" class="" target="_blank"
-                    ><svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="#fff"
-                      class="bi bi-facebook"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
-                      /></svg
-                  ></a>
-                </li>
-                <li class="ms-3">
-                  <a href="http://" class="" target="_blank">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="#fff"
-                      class="bi bi-instagram"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li class="ms-3">
-                  <a href="http://" class="" target="_blank">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="#fff"
-                      class="bi bi-linkedin"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li class="ms-3">
-                  <a href="http://" class="" target="_blank">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="#fff"
-                      class="bi bi-twitter"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
-                      />
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
+                </a>
+              </li>
+              <li class="ms-3">
+                <a href="http://" class="" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-linkedin"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                  </svg>
+                </a>
+              </li>
+              <li class="ms-3">
+                <a href="http://" class="" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-twitter"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="navigation">
-        <div class="container">
-          <div class="row">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid px-0">
-                  <a class="navbar-brand me-0 px-1" href="#"><img src="images/logo1.png" alt="" class="img-fluid"></a>
-                  <button class="navbar-toggler nav-button mx-auto my-0 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#fff" class="bi bi-list" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                      </svg>
-                  </button>
-                  <div class="phone-btn px-2 mx-auto my-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#C53678" class="bi bi-person-workspace" viewBox="0 0 16 16">
-                        <path d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H4Zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
-                        <path d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.373 5.373 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2H2Z"/>
-                      </svg>
-                   </div>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-center">
-                      <li class="nav-item px-4">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                      </li>
-                      <li class="nav-item px-4">
-                        <a class="nav-link" href="#">Link</a>
-                      </li>
-                      <li class="nav-item px-4">
-                        <a class="nav-link" href="#">Link</a>
-                      </li>
-                      <li class="nav-item px-4">
-                        <a class="nav-link" href="#">Link</a>
-                      </li>
-                      <li class="nav-item dropdown px-4">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                      </li>
-                     
-                    </ul>
-                  
-                  </div>
-                   
-                  
-                  <div class="button">
-                    <div class="get-quote">
-                        <a href="/" class=" default-btn">
-                            <span>Hire Us Now</span>
-                        </a>
-                    </div>
-                </div>
-                </div>
-              </nav>
-          </div>
-        </div>
-      </div>
-    </header>
-    <section id="banner-area" class="jarallax">
-     <div class="banner">
-          <div class="container mt-4 fs-5">
-            <div class="row">
-                <div class="col-lg-9">
-                    <div class="banner-content">
-                        <p class="text-white fw-bold">Lorem, ipsum.
-                        </p>
-                        <h1 class="text-white fw-bold ">
-                            Lorem ipsum dolor sit amet consectetur.
-                        </h1>
-                        <p class="text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia maxime fugiat molestias earum voluptatibus assumenda, architecto odit modi. Fugit, consectetur?</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 position-relative">
-                    <div class="banner-video wow zoomIn" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: zoomIn;">
-                        <a href="https://www.youtube.com/watch?v=sdpxddDzXfE" class="video-btn popup-youtube">
-                            <i class="bx bx-play"></i>
-                        </a>
-                    </div>
-                    
-                </div>
-            </div>
-          </div>
-     </div>
-     
-    </section>
-    <section class="cards">
-        <div class="container mx-auto">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="card mx-auto " style="height:200px;">
-                        <div class="card-body ">
-                            <div class="title-card d-flex align-items-center mx-auto">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#c53678" class="bi bi-sliders" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3h9.05zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8h2.05zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1h9.05z"/>
-                                  </svg>
-                              <h3 class="card-title ps-3 fw-bolder">Card title</h3>
-                            </div>   
-                            <div class="body-card pt-2">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div> 
-                         
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card mx-auto " style="height:200px;">
-                        <div class="card-body ">
-                            <div class="title-card d-flex align-items-center mx-auto">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#c53678" class="bi bi-sliders" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3h9.05zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8h2.05zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1h9.05z"/>
-                                  </svg>
-                              <h3 class="card-title ps-3 fw-bolder">Card title</h3>
-                            </div>   
-                            <div class="body-card pt-2">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div> 
-                         
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card mx-auto " style="height:200px;">
-                        <div class="card-body ">
-                            <div class="title-card d-flex align-items-center mx-auto">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#c53678" class="bi bi-sliders" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3h9.05zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8h2.05zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1h9.05z"/>
-                                  </svg>
-                              <h3 class="card-title ps-3 fw-bolder">Card title</h3>
-                            </div>   
-                            <div class="body-card pt-2">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div> 
-                         
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-    <section class="approach pb-70">
-        <div class="container mt-3">
-            <div class="approach-title fw-bolder">
-                <span class="text-pink fs-2">Our Approach</span>
-                <h2 class="fw-bold">Through system forensics and tracking, we make the world better.</h2>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="approach-img">
-                        <img src="/images/shubham-dhage-_rZnChsIFuQ-unsplash.jpg" alt="Image" class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-lg-6 ">
-                    <div class="approach-content ms-4 ">
-                        <h3 class="mb-4 fw-bold">Without stopping for a moment we give you best technology experience with our
-                            expertise to stopping theft and preventing damages.</h3>
-                        <div class="row">
-                            <div class="col-lg-6 col-sm-6">
-                                <div class="single-approach single-approach-hoverw p-3 mb-3 bg-purple text-white border-left-pink">
-                                    <h3>Investigation</h3>
-                                    <p>Understanding the situation and discussion with clients for details regarding the
-                                        situation.</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-sm-6">
-                                <div class="single-approach single-approach-hover p-3 mb-3 border-left-pink">
-                                    <h3>Findings / Reports</h3>
-                                    <p>Detailed reports on investigation findings and instructions to <br> follow.</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-sm-6">
-                                <div class="single-approach single-approach-hoverw p-3 mb-3 border-left-pink text-white bg-purple">
-                                    <h3>Solution</h3>
-                                    <p>Clients are given process and approach, with permission to proceed..</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-sm-6">
-                                <div class="single-approach single-approach-hover p-3 mb-3 border-left-pink">
-                                    <h3>Recovery / Results</h3>
-                                    <p>We carry out our operations and get what has been stolen or hidden from you to
-                                        light.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="privacy jarallax">
-        <div class="container text-white">
-            <div class="privacy-title white-title position-relative text-center">
-                <span class="mb-3 fw-bold">Our Privacy Policy</span>
-                <h2>You Can Protect Your Organization’s Cybersecurity By Us</h2>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-sm-6 position-relative text-dark">
-                    <div class="single-challenges overly-one bg-white">
-                        <div class="overly-two">
-                            <i class="flaticon-threat"></i>
-                            <h3>Identifying Threats</h3>
-                            <p>We identity cyber threats and mallicious attempts</p>
-                            <span class="flaticon-threat"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-challenges overly-one">
-                        <div class="overly-two">
-                            <i class="flaticon-cyber"></i>
-                            <h3>Cyber Risk Assessment</h3>
-                            <p>A team of cyber risks managements professionals.</p>
-                            <span class="flaticon-cyber"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-challenges overly-one">
-                        <div class="overly-two">
-                            <i class="flaticon-cyber-security-1"></i>
-                            <h3>Testing Cyber Security</h3>
-                            <p>We prevent future attacks from exposing your data.</p>
-                            <span class="flaticon-cyber-security-1"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-challenges overly-one">
-                        <div class="overly-two">
-                            <i class="flaticon-password"></i>
-                            <h3>Managing Cloud Security</h3>
-                            <p>Your information are privacy protected by CTS</p>
-                            <span class="flaticon-password"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="services">
-        <div class="container">
-            <div class="section-title">
-                <span>Cybersecurity Services</span>
-                <h2>You Can Protect Your Organization’s Cybersecurity By Services Us</h2>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-services">
-                        <div class="services-img">
-                            <a href="https://cybertracksystems.com/services/phone-remote-access">
-                                <img src="assets/img/services/services-1.jpg" alt="Image">
-                            </a>
-                        </div>
-                        <div class="services-content">
-                            <h3><a href="https://cybertracksystems.com/services/phone-remote-access">Phone remote access</a></h3>
-                            <div class="content">
-                                <p>Creating a backdoor into phones in order to access and monitor activities</p>
-                                <a href="https://cybertracksystems.com/services/phone-remote-access" class="read-more">
-                                    Read More
-                                    <i class="flaticon-right-arrow"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-services">
-                        <div class="services-img">
-                            <a href="https://cybertracksystems.com/services/social-media-access">
-                                <img src="assets/img/services/services-2.jpg" alt="Image">
-                            </a>
-                        </div>
-                        <div class="services-content">
-                            <h3><a href="https://cybertracksystems.com/services/social-media-access">Social media access.</a></h3>
-                            <p>Gain access, recover or retrieve social media or email accounts from hackers.</p>
-                            <a href="https://cybertracksystems.com/services/social-media-access" class="read-more">
-                                Read More
-                                <i class="flaticon-right-arrow"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-services">
-                        <div class="services-img">
-                            <a href="https://cybertracksystems.com">
-                                <img src="assets/img/services/services-3.jpg" alt="Image">
-                            </a>
-                        </div>
-                        <div class="services-content">
-                            <h3><a href="https://cybertracksystems.com">Debt clearance </a></h3>
-                            <p>Clear your debt from your local bank account without trace or paper trail.</p>
-                            <a href="https://cybertracksystems.com" class="read-more">
-                                Read More
-                                <i class="flaticon-right-arrow"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-services">
-                        <div class="services-img">
-                            <a href="https://cybertracksystems.com">
-                                <img src="assets/img/services/services-4.jpg" alt="Image">
-                            </a>
-                        </div>
-                        <div class="services-content">
-                            <h3><a href="https://cybertracksystems.com">Credit score upgrade</a></h3>
-                            <p>Upgrade your credit score to access and enjoy the full benefits of your bank.</p>
-                            <a href="https://cybertracksystems.com" class="read-more">
-                                Read More
-                                <i class="flaticon-right-arrow"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="testimonials jarallax">
-        <div id="carouselExampleAutoplaying" class="carousel slide position-relative" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="..." class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-    </section>
- <section class="partners">
-    <div class="swiper">
-        <!-- Parallax background element -->
-        <div
-          class="parallax-bg"
-          style="background-image:url(path/to/image.jpg)"
-          data-swiper-parallax="-23%"
-        ></div>
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <!-- Each slide has parallax title -->
-            <div class="title" data-swiper-parallax="-100">Slide 1</div>
-            <!-- Parallax subtitle -->
-            <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
-            <!-- And parallax text with custom transition duration -->
-            <div
-              class="text"
-              data-swiper-parallax="-300"
-              data-swiper-parallax-duration="600"
-            >
-              <p>Lorem ipsum dolor sit amet, ...</p>
-            </div>
-            <!-- Opacity parallax -->
-            <div data-swiper-parallax-opacity="0.5">I will change opacity</div>
-            <!-- Scale parallax -->
-            <div data-swiper-parallax-scale="0.15">I will change scale</div>
-          </div>
-          <div class="swiper-slide">
-            <!-- Each slide has parallax title -->
-            <div class="title" data-swiper-parallax="-100">Slide 1</div>
-            <!-- Parallax subtitle -->
-            <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
-            <!-- And parallax text with custom transition duration -->
-            <div
-              class="text"
-              data-swiper-parallax="-300"
-              data-swiper-parallax-duration="600"
-            >
-              <p>Lorem ipsum dolor sit amet, ...</p>
-            </div>
-            <!-- Opacity parallax -->
-            <div data-swiper-parallax-opacity="0.5">I will change opacity</div>
-            <!-- Scale parallax -->
-            <div data-swiper-parallax-scale="0.15">I will change scale</div>
-          </div>
-          <div class="swiper-slide">
-            <!-- Each slide has parallax title -->
-            <div class="title" data-swiper-parallax="-100">Slide 1</div>
-            <!-- Parallax subtitle -->
-            <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
-            <!-- And parallax text with custom transition duration -->
-            <div
-              class="text"
-              data-swiper-parallax="-300"
-              data-swiper-parallax-duration="600"
-            >
-              <p>Lorem ipsum dolor sit amet, ...</p>
-            </div>
-            <!-- Opacity parallax -->
-            <div data-swiper-parallax-opacity="0.5">I will change opacity</div>
-            <!-- Scale parallax -->
-            <div data-swiper-parallax-scale="0.15">I will change scale</div>
-          </div>
-          <div class="swiper-slide">
-            <!-- Each slide has parallax title -->
-            <div class="title" data-swiper-parallax="-100">Slide 1</div>
-            <!-- Parallax subtitle -->
-            <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
-            <!-- And parallax text with custom transition duration -->
-            <div
-              class="text"
-              data-swiper-parallax="-300"
-              data-swiper-parallax-duration="600"
-            >
-              <p>Lorem ipsum dolor sit amet, ...</p>
-            </div>
-            <!-- Opacity parallax -->
-            <div data-swiper-parallax-opacity="0.5">I will change opacity</div>
-            <!-- Scale parallax -->
-            <div data-swiper-parallax-scale="0.15">I will change scale</div>
-          </div>
-          ...
-        </div>
-        <div class="swiper-pagination"></div>
-
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-
-  <!-- If we need scrollbar -->
-  <div class="swiper-scrollbar"></div>
-      </div>
- </section>
- <section class="get-in-touch jarallax">
-    <div class="container">
-        <div class="section-title white-title">
-            <span>Get In Touch</span>
-            <h2>Contact Us Today To Speak With An Expert About Your Specific Needs</h2>
-        </div>
-        <form class="get-in-touch-form" method="POST" action="https://cybertracksystems.com/consultation">
-            <input type="hidden" name="_token" value="mPhyLYxNczIQ2oRYybqN04CtQNzEoHq9XhlhBFsx">            <div class="row">
-                <div class="col-lg-6 col-sm-6">
-                    <div class="form-group">
-                        <label>Name</label>
-                        <input type="text" class="form-control" name="name" id="name">
-                    </div>
-                </div>
-                <div class="col-lg-6 col-sm-6">
-                    <div class="form-group">
-                        <label>Email</label>
-                        <input type="email" class="form-control" name="email" id="email">
-                    </div>
-                </div>
-                <div class="col-lg-6 col-sm-6">
-                    <div class="form-group">
-                        <label>Subject</label>
-                        <input type="text" class="form-control" name="msg_subject" id="msg_subject">
-                    </div>
-                </div>
-                <div class="col-lg-6 col-sm-6">
-                    <div class="form-group">
-                        <label>Message</label>
-                        <textarea class="form-control" name="message" id="message"></textarea>
-                    </div>
-                </div>
-            </div>
-            <button type="submit" class="default-btn">
-                <span>Consultation</span>
-            </button>
-        </form>
     </div>
- </section>
- <section class="subscribe">
-    <div class="container">
-        <div class="subscribe-bg">
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-sm-6">
-                    <div class="subscribe-content">
-                        <img src="assets/img/subscribe-img.png" alt="Image">
-                        <h3>Hire an Ethical hacker</h3>
-                        <span>Just one step away from achieving your goal</span>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-sm-6">
-                    <form class="newsletter-form" action="https://cybertracksystems.com/contact" method="GET" novalidate="true">
-
-                        <button class="default-btn" type="submit" style="pointer-events: all; cursor: pointer;">
-                            Subscribe
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
- </section>
- <footer class="jarallax footer-section">
-    <div class="container">
+    <div class="navigation">
+      <div class="container">
         <div class="row">
-            <div class="col-lg-3 col-md-6">
-                <div class="single-footer-widget">
-                    <a href="https://cybertracksystems.com" class="logo">
-                        <img src="https://cybertracksystems.com/logo.png" alt="Image" style="width: 200px !important">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid px-0">
+              <a class="navbar-brand me-0 px-1" href="#"><img src="images/logo1.png" alt="" class="img-fluid"></a>
+              <button class="navbar-toggler nav-button mx-auto my-0 " type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#fff" class="bi bi-list"
+                  viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+              </button>
+              <div class="phone-btn px-2 mx-auto my-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#C53678"
+                  class="bi bi-person-workspace" viewBox="0 0 16 16">
+                  <path d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H4Zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+                  <path
+                    d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.373 5.373 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2H2Z" />
+                </svg>
+              </div>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-center">
+                  <li class="nav-item px-4">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item px-4">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item px-4">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item px-4">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown px-4">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Dropdown
                     </a>
-
-                    <ul class="social-icon">
-                        <li>
-                            <a href="#">
-                                <i class="bx bxl-facebook"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="bx bxl-instagram"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="bx bxl-linkedin-square"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="bx bxl-twitter"></i>
-                            </a>
-                        </li>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="single-footer-widget">
-                    <h3>Contact</h3>
-                    <ul class="address">
+                  </li>
 
-                        <li>
-                            <i class="bx bxs-envelope"></i>
-                            <a href="mailto:info@cybertracksystems.com"><span>info@cybertracksystems.com</span></a>
-                            
-                        </li>
-                        
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="single-footer-widget">
-                    <h3>Quick Links</h3>
-                    <ul class="import-link">
-                        <li>
-                            <a href="https://cybertracksystems.com/testimonial">Testimonials</a>
-                        </li>
-                        <li>
-                            <a href="https://cybertracksystems.com/contact">Contact Us</a>
-                        </li>
-                        <li>
-                            <a href="https://cybertracksystems.com">About CyberTrackSystems</a>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="single-footer-widget">
-                    <h3>Services</h3>
-                    <ul class="import-link">
-                        <li>
-                            <a href="https://cybertracksystems.com/services/phone-remote-access">Phone Remote Access</a>
-                        </li>
-                        <li>
-                            <a href="https://cybertracksystems.com/services/social-media-access">Social Media Access</a>
-                        </li>
-                        <li>
-                            <a href="https://cybertracksystems.com/services/debt-clearance">Debt Clearance</a>
-                        </li>
-                        <li>
-                            <a href="https://cybertracksystems.com/services/credit-score-upgrade">Credit Score Upgrade</a>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
- </footer>
- <div class="copyright">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6 col-md-6">
-                <p>
-                    Copyright <i class="bx bx-copyright"></i>2021 CyberTrackSystems.
-                </p>
-            </div>
-            <div class="col-lg-6 col-md-6">
-                <ul class="footer-menu">
-    
-                    <li>
-                        <a href="https://cybertracksystems.com/contact" target="_blank">
-                            Hire Us Now
-                        </a>
-                    </li>
                 </ul>
+
+              </div>
+
+
+              <div class="button">
+                <div class="get-quote">
+                  <a href="/" class=" default-btn">
+                    <span>Hire Us Now</span>
+                  </a>
+                </div>
+              </div>
             </div>
+          </nav>
         </div>
+      </div>
     </div>
-    
- </div>
- 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.js"></script>
-    <script src="javascript/app.js"></script>
-  </body>
+  </header>
+  <section id="banner-area" class="jarallax">
+    <div class="banner">
+      <div class="container mt-4 fs-5">
+        <div class="row">
+          <div class="col-lg-9">
+            <div class="banner-content">
+              <p class="text-white fw-bold">Lorem, ipsum.
+              </p>
+              <h1 class="text-white fw-bold ">
+                Lorem ipsum dolor sit amet consectetur.
+              </h1>
+              <p class="text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia maxime fugiat
+                molestias earum voluptatibus assumenda, architecto odit modi. Fugit, consectetur?</p>
+            </div>
+          </div>
+          <div class="col-lg-3 position-relative">
+            <div class="banner-video wow zoomIn" data-wow-delay="1s"
+              style="visibility: visible; animation-delay: 1s; animation-name: zoomIn;">
+              <a href="https://www.youtube.com/watch?v=sdpxddDzXfE" class="video-btn popup-youtube">
+                <i class="bx bx-play"></i>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="cards">
+    <div class="container mx-auto">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card mx-auto " style="height:200px;">
+            <div class="card-body ">
+              <div class="title-card d-flex align-items-center mx-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#c53678" class="bi bi-sliders"
+                  viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3h9.05zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8h2.05zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1h9.05z" />
+                </svg>
+                <h3 class="card-title ps-3 fw-bolder">Card title</h3>
+              </div>
+              <div class="body-card pt-2">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card mx-auto " style="height:200px;">
+            <div class="card-body ">
+              <div class="title-card d-flex align-items-center mx-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#c53678" class="bi bi-sliders"
+                  viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3h9.05zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8h2.05zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1h9.05z" />
+                </svg>
+                <h3 class="card-title ps-3 fw-bolder">Card title</h3>
+              </div>
+              <div class="body-card pt-2">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card mx-auto " style="height:200px;">
+            <div class="card-body ">
+              <div class="title-card d-flex align-items-center mx-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#c53678" class="bi bi-sliders"
+                  viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3h9.05zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8h2.05zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1h9.05z" />
+                </svg>
+                <h3 class="card-title ps-3 fw-bolder">Card title</h3>
+              </div>
+              <div class="body-card pt-2">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="approach pb-70">
+    <div class="container mt-3">
+      <div class="approach-title fw-bolder">
+        <span class="text-pink fs-2">Our Approach</span>
+        <h2 class="fw-bold">Through system forensics and tracking, we make the world better.</h2>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="approach-img">
+            <img src="/images/shubham-dhage-_rZnChsIFuQ-unsplash.jpg" alt="Image" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-lg-6 ">
+          <div class="approach-content ms-4 ">
+            <h3 class="mb-4 fw-bold">Without stopping for a moment we give you best technology experience with our
+              expertise to stopping theft and preventing damages.</h3>
+            <div class="row">
+              <div class="col-lg-6 col-sm-6">
+                <div class="single-approach single-approach-hoverw p-3 mb-3 bg-purple text-white border-left-pink">
+                  <h3>Investigation</h3>
+                  <p>Understanding the situation and discussion with clients for details regarding the
+                    situation.</p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-sm-6">
+                <div class="single-approach single-approach-hover p-3 mb-3 border-left-pink">
+                  <h3>Findings / Reports</h3>
+                  <p>Detailed reports on investigation findings and instructions to <br> follow.</p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-sm-6">
+                <div class="single-approach single-approach-hoverw p-3 mb-3 border-left-pink text-white bg-purple">
+                  <h3>Solution</h3>
+                  <p>Clients are given process and approach, with permission to proceed..</p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-sm-6">
+                <div class="single-approach single-approach-hover p-3 mb-3 border-left-pink">
+                  <h3>Recovery / Results</h3>
+                  <p>We carry out our operations and get what has been stolen or hidden from you to
+                    light.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="privacy jarallax">
+    <div class="container text-white">
+      <div class="privacy-title white-title position-relative text-center">
+        <span class="mb-3 fw-bold fs-2">Our Privacy Policy</span>
+        <h2>You Can Protect Your Organization’s Cybersecurity By Us</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-sm-6 position-relative text-dark">
+          <div class="single-challenges overly-one bg-white">
+            <div class="overly-two">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#c53678" class="bi bi-virus2"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 0a1 1 0 0 0-1 1v1.143c0 .557-.407 1.025-.921 1.24-.514.214-1.12.162-1.513-.231l-.809-.809a1 1 0 1 0-1.414 1.414l.809.809c.394.394.445.999.23 1.513C3.169 6.593 2.7 7 2.144 7H1a1 1 0 0 0 0 2h1.143c.557 0 1.025.407 1.24.921.214.514.163 1.12-.231 1.513l-.809.809a1 1 0 0 0 1.414 1.414l.809-.809c.394-.394.999-.445 1.513-.23.514.214.921.682.921 1.24V15a1 1 0 1 0 2 0v-1.143c0-.557.407-1.025.921-1.24.514-.214 1.12-.162 1.513.231l.809.809a1 1 0 0 0 1.414-1.414l-.809-.809c-.393-.394-.445-.999-.23-1.513.214-.514.682-.921 1.24-.921H15a1 1 0 1 0 0-2h-1.143c-.557 0-1.025-.407-1.24-.921-.214-.514-.162-1.12.231-1.513l.809-.809a1 1 0 0 0-1.414-1.414l-.809.809c-.394.393-.999.445-1.513.23-.514-.214-.92-.682-.92-1.24V1a1 1 0 0 0-1-1Zm2 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM7 7a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm1 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm4-4a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z" />
+              </svg>
+              <h4 class="mt-1">Identifying Threats</h4>
+              <p>We identity cyber threats and mallicious attempts</p>
+              <span class="flaticon-threat"></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 position-relative text-dark">
+          <div class="single-challenges overly-one bg-white">
+            <div class="overly-two">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#c53678" class="bi bi-safe"
+                viewBox="0 0 16 16">
+                <path
+                  d="M1 1.5A1.5 1.5 0 0 1 2.5 0h12A1.5 1.5 0 0 1 16 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-12A1.5 1.5 0 0 1 1 14.5V13H.5a.5.5 0 0 1 0-1H1V8.5H.5a.5.5 0 0 1 0-1H1V4H.5a.5.5 0 0 1 0-1H1V1.5zM2.5 1a.5.5 0 0 0-.5.5v13a.5.5 0 0 0 .5.5h12a.5.5 0 0 0 .5-.5v-13a.5.5 0 0 0-.5-.5h-12z" />
+                <path
+                  d="M13.5 6a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zM4.828 4.464a.5.5 0 0 1 .708 0l1.09 1.09a3.003 3.003 0 0 1 3.476 0l1.09-1.09a.5.5 0 1 1 .707.708l-1.09 1.09c.74 1.037.74 2.44 0 3.476l1.09 1.09a.5.5 0 1 1-.707.708l-1.09-1.09a3.002 3.002 0 0 1-3.476 0l-1.09 1.09a.5.5 0 1 1-.708-.708l1.09-1.09a3.003 3.003 0 0 1 0-3.476l-1.09-1.09a.5.5 0 0 1 0-.708zM6.95 6.586a2 2 0 1 0 2.828 2.828A2 2 0 0 0 6.95 6.586z" />
+              </svg>
+              <h4 class="mt-1">Cyber Risk Assessment</h4>
+              <p>A team of cyber risks managements professionals.</p>
+              <span class="flaticon-cyber"></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 position-relative text-dark">
+          <div class="single-challenges overly-one bg-white">
+            <div class="overly-two">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#c53678" class="bi bi-shield-lock"
+                viewBox="0 0 16 16">
+                <path
+                  d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z" />
+                <path
+                  d="M9.5 6.5a1.5 1.5 0 0 1-1 1.415l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99a1.5 1.5 0 1 1 2-1.415z" />
+              </svg>
+              <h4 class="mt-1">Testing Cyber Security</h4>
+              <p>We prevent future attacks from exposing your data.</p>
+              <span class="flaticon-cyber-security-1"></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 position-relative text-dark">
+          <div class="single-challenges overly-one bg-white">
+            <div class="overly-two">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#c53678" class="bi bi-cloud-check"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M10.354 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                <path
+                  d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383zm.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z" />
+              </svg>
+              <h4 class="mt-1">Managing Cloud Security</h4>
+              <p>Your information are privacy protected by CTS</p>
+              <span class="flaticon-password"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="services pt-100 pb-70">
+    <div class="container">
+      <div class="section-title text-center max-w">
+        <span class="fs-2 text-pink">Cybersecurity Services</span>
+        <h2 class="fw-bold">You Can Protect Your Organization’s Cybersecurity By Services Us</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-sm-6">
+          <div class="single-services ">
+            <div class="services-img">
+              <a href="https://cybertracksystems.com/services/phone-remote-access">
+                <img src="/images/services-1.jpg" alt="Image" class="img-fluid">
+              </a>
+            </div>
+            <div class="services-content">
+              <h4><a href="https://cybertracksystems.com/services/phone-remote-access">Phone remote access</a></h4>
+              <div class="content">
+                <p>Creating a backdoor into phones in order to access and monitor activities</p>
+                <a href="https://cybertracksystems.com/services/phone-remote-access" class="read-more">
+                  Read More
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="single-services">
+            <div class="services-img">
+              <a href="https://cybertracksystems.com/services/social-media-access">
+                <img src="/images/services-2.jpg" alt="Image" class="img-fluid">
+              </a>
+            </div>
+            <div class="services-content">
+              <h4><a href="https://cybertracksystems.com/services/social-media-access">Social media access.</a></h3>
+                <p>Gain access, recover or retrieve social media or email accounts from hackers.</p>
+                <a href="https://cybertracksystems.com/services/social-media-access" class="read-more">
+                  Read More
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                  </svg>
+                </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="single-services">
+            <div class="services-img">
+              <a href="https://cybertracksystems.com">
+                <img src="/images/services-3.jpg" alt="Image" class="img-fluid">
+              </a>
+            </div>
+            <div class="services-content">
+              <h4><a href="https://cybertracksystems.com">Debt clearance </a></h4>
+              <p>Clear your debt from your local bank account without trace or paper trail.</p>
+              <a href="https://cybertracksystems.com" class="read-more">
+                Read More
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="single-services">
+            <div class="services-img">
+              <a href="https://cybertracksystems.com">
+                <img src="/images/services-4.jpg" alt="Image" class="img-fluid">
+              </a>
+            </div>
+            <div class="services-content">
+              <h4><a href="https://cybertracksystems.com">Credit score upgrade</a></h4>
+              <p>Upgrade your credit score to access and enjoy the full benefits of your bank.</p>
+              <a href="https://cybertracksystems.com" class="read-more">
+                Read More
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="testimonials jarallax">
+    <div class="container text-center">
+      <span class="text-uppercase text-white fw-bold fs-3  mb-5">What our Customers say</span>
+      <div id="carouselExampleAutoplaying" class="carousel slide position-relative" data-bs-ride="carousel">
+        <div class="carousel-inner text-white mt-5">
+          <div class="carousel-item active">
+            <div class="quote-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-quote"
+                viewBox="0 0 16 16">
+                <path
+                  d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z" />
+              </svg>
+            </div>
+            <p class="mb-5 fs-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, est at alias perferendis iste totam
+              quisquam facilis officia harum repellat nobis ratione officiis placeat eum nam distinctio expedita nulla
+              deleniti saepe iusto beatae consequuntur rem! Obcaecati quos autem culpa odit pariatur velit aut
+              repudiandae a voluptatem, ab, reprehenderit suscipit expedita
+            </p>
+            <ul class="ps-0 mx-auto">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#c53678" class="bi bi-star-fill"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#c53678" class="bi bi-star-fill"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#c53678" class="bi bi-star-fill"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#c53678" class="bi bi-star-fill"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#c53678" class="bi bi-star-fill"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+              </li>
+            </ul>
+            <h3 class="text-center mx-auto">
+              John Doe
+            </h3>
+          </div>
+          <div class="carousel-item ">
+            <div class="quote-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-quote"
+                viewBox="0 0 16 16">
+                <path
+                  d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z" />
+              </svg>
+            </div>
+            <p class="mb-5 fs-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, est at alias perferendis iste totam
+              quisquam facilis officia harum repellat nobis ratione officiis placeat eum nam distinctio expedita nulla
+              deleniti saepe iusto beatae consequuntur rem! Obcaecati quos autem culpa odit pariatur velit aut
+              repudiandae a voluptatem, ab, reprehenderit suscipit expedita
+            </p>
+            <ul>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#c53678" class="bi bi-star-fill"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#c53678" class="bi bi-star-fill"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#c53678" class="bi bi-star-fill"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#c53678" class="bi bi-star-fill"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#c53678" class="bi bi-star-fill"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+              </li>
+            </ul>
+            <h3>
+              John Doe
+            </h3>
+          </div>
+          <div class="carousel-item ">
+            <div class="quote-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-quote"
+                viewBox="0 0 16 16">
+                <path
+                  d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z" />
+              </svg>
+            </div>
+            <p class="mb-5 fs-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, est at alias perferendis iste totam
+              quisquam facilis officia harum repellat nobis ratione officiis placeat eum nam distinctio expedita nulla
+              deleniti saepe iusto beatae consequuntur rem! Obcaecati quos autem culpa odit pariatur velit aut
+              repudiandae a voluptatem, ab, reprehenderit suscipit expedita
+            </p>
+            <ul class="ps-0 mx-auto">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#c53678" class="bi bi-star-fill"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#c53678" class="bi bi-star-fill"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#c53678" class="bi bi-star-fill"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#c53678" class="bi bi-star-fill"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#c53678" class="bi bi-star-fill"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+              </li>
+            </ul>
+            <h3 class="text-center mx-auto">
+              John Doe
+            </h3>
+          </div>
+          <div class="carousel-item ">
+            <div class="quote-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-quote"
+                viewBox="0 0 16 16">
+                <path
+                  d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z" />
+              </svg>
+            </div>
+            <p class="mb-5 fs-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, est at alias perferendis iste totam
+              quisquam facilis officia harum repellat nobis ratione officiis placeat eum nam distinctio expedita nulla
+              deleniti saepe iusto beatae consequuntur rem! Obcaecati quos autem culpa odit pariatur velit aut
+              repudiandae a voluptatem, ab, reprehenderit suscipit expedita
+            </p>
+            <ul class="ps-0 mx-auto">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#c53678" class="bi bi-star-fill"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#c53678" class="bi bi-star-fill"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#c53678" class="bi bi-star-fill"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#c53678" class="bi bi-star-fill"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#c53678" class="bi bi-star-fill"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+              </li>
+            </ul>
+            <h3 class="text-center mx-auto">
+              John Doe
+            </h3>
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+  </section>
+  <section class="partners">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        ...
+      </div>
+    </div>
+  </section>
+  <section class="get-in-touch jarallax pt-100 pb-70">
+    <div class="container">
+      <div class="section-title white-title text-center text-white max-w mx-auto">
+        <span class="fs-3 fw-bold text-pink mb-3">Get In Touch</span>
+        <h2 class=" fs-1 fw-bold">Contact Us Today To Speak With An Expert About Your Specific Needs</h2>
+      </div>
+      <form class="get-in-touch-form" method="POST" action="/">
+        <input type="hidden" name="_token" value="mPhyLYxNczIQ2oRYybqN04CtQNzEoHq9XhlhBFsx">
+        <div class="row">
+          <div class="col-lg-6 col-sm-6">
+            <div class="form-group mb-4">
+              <label class="mb-2 text-start fw-bold fs-5 text-white d-block ">Name</label>
+              <input type="text" class="form-control" name="name" id="name">
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-6">
+            <div class="form-group mb-4">
+              <label class="mb-2 text-start fw-bold fs-5 text-white d-block">Email</label>
+              <input type="email" class="form-control" name="email" id="email">
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-6">
+            <div class="form-group mb-4">
+              <label class="mb-2 text-start fw-bold fs-5 text-white d-block">Subject</label>
+              <input type="text" class="form-control" name="msg_subject" id="msg_subject">
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-6">
+            <div class="form-group mb-4">
+              <label class=" mb-2 text-start fw-bold fs-5 text-white d-block">Message</label>
+              <textarea class="form-control" name="message" id="message"></textarea>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="default-btn mt-3">
+          <span>Consultation</span>
+        </button>
+      </form>
+    </div>
+  </section>
+  <section class="subscribe pt-100 pb-70">
+    <div class="container">
+      <div class="subscribe-bg p-5 pb-3">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-sm-6">
+            <div class="subscribe-content position-relative  mb-3">
+              <img src="/images/subscribe-img.png" alt="Image" class="position-absolute top-0 start-0 ">
+              <h3>Hire an Ethical hacker</h3>
+              <span>Just one step away from achieving your goal</span>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-6">
+            <form class="newsletter-form position-relative mb-3" action="/" method="GET" novalidate="true" >
+
+              <button class="default-btn position-absolute top-0 end-0" type="submit" style="pointer-events: all; cursor: pointer;">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="jarallax footer-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="single-footer-widget">
+            <a href="https://cybertracksystems.com" class="logo">
+              <img src="images/logo1.png" alt="Image" style="width: 200px !important" class="mb-3">
+            </a>
+
+            <ul class="social-icon ps-0">
+              <li class="">
+                <a href="#">
+                  <i class="bx bxl-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bx bxl-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bx bxl-linkedin-square"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bx bxl-twitter"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="single-footer-widget">
+            <h3 class="text-white pb-1 mb-3 position-relative">Contact</h3>
+            <ul class="address ps-0">
+
+              <li class="position-relative ps-5">
+                <i class="bx bxs-envelope"></i>
+                <a href="mailto:info@cybertracksystems.com"><span>info@cybertracksystems.com</span></a>
+
+              </li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="single-footer-widget">
+            <h3 class="text-white pb-1 mb-3 position-relative">Quick Links</h3>
+            <ul class="import-link ps-0">
+              <li class="ps-4 mb-2">
+                <a href="https://cybertracksystems.com/testimonial">Testimonials</a>
+              </li>
+              <li class="ps-4 mb-2">
+                <a href="https://cybertracksystems.com/contact">Contact Us</a>
+              </li>
+              <li class="ps-4 mb-2">
+                <a href="https://cybertracksystems.com">About CyberTrackSystems</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="single-footer-widget">
+            <h3 class="text-white pb-1 mb-3 position-relative">Services</h3>
+            <ul class="import-link ps-0">
+              <li class="ps-4 mb-2">
+                <a href="https://cybertracksystems.com/services/phone-remote-access">Phone Remote Access</a>
+              </li>
+              <li class="ps-4 mb-2">
+                <a href="https://cybertracksystems.com/services/social-media-access">Social Media Access</a>
+              </li>
+              <li class="ps-4 mb-2">
+                <a href="https://cybertracksystems.com/services/debt-clearance">Debt Clearance</a>
+              </li>
+              <li class="ps-4 mb-2">
+                <a href="https://cybertracksystems.com/services/credit-score-upgrade">Credit Score Upgrade</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="copyright">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-6">
+          <p>
+            Copyright <i class="bx bx-copyright"></i>2021 CyberTrackSystems.
+          </p>
+        </div>
+        <div class="col-lg-6 col-md-6">
+          <ul class="footer-menu">
+
+            <li>
+              <a href="https://cybertracksystems.com/contact" target="_blank">
+                Hire Us Now
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.js"></script>
+  <script src="javascript/app.js"></script>
+</body>
+
 </html>
