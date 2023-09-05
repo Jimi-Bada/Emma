@@ -28,3 +28,5 @@ const swiper = new Swiper('.swiper', {
   direction: 'vertical',
   loop: true,
 });
+var copy = document.querySelector('.slide-wrapper').cloneNode(true);
+document.querySelector('.partners-slide ').appendChild(copy)
